@@ -75,12 +75,10 @@ const KakaoButton = styled.a`
   }
 `;
 
-// 2. 메인 컴포넌트
 const CustomerCenter = () => {
   return (
     <ScreenWrapper>
       <Container>
-        {/* 전화상담 섹션 */}
         <Section>
           <SubTitle>전화상담</SubTitle>
           <MainContent>02 - 0000 - 0000</MainContent>
