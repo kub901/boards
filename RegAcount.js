@@ -25,7 +25,7 @@ const Container = styled.div`
   align-items: center;
   gap: 20px;
 `;
-
+// 등록 버튼 스타일
 const RegisterButton = styled.button`
   width: 100%;
   max-width: 360px;
