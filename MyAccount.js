@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-// 1. 전체 화면 중앙 정렬 래퍼
 const ScreenWrapper = styled.div`
   width: 100vw;
   min-height: 100vh;
@@ -12,7 +11,6 @@ const ScreenWrapper = styled.div`
   background-color: #f5f5f5;
 `;
 
-// 2. 메인 컨테이너 박스
 const Container = styled.div`
   width: 100%;
   max-width: 500px;
@@ -50,7 +48,7 @@ const StarButton = styled.button`
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: ${(props) => (props.$isPrimary ? "#ff4d4f" : "#ccc")};
+  color: ${(props) => (props.$isPrimary ? "#d8ff4d" : "#ccc")};
   transition: transform 0.1s ease;
 
   &:active {
@@ -114,7 +112,7 @@ const PaymentManagePage = () => {
   const [paymentMethods, setPaymentMethods] = useState([
     { id: 1, name: "토스뱅크", number: "100-00-00**-**0", isPrimary: false },
     { id: 2, name: "토스뱅크", number: "100-00-00**-**0", isPrimary: false },
-    { id: 3, name: "토스뱅크", number: "100-00-00**-**0", isPrimary: true }, // 기본 주 거래
+    { id: 3, name: "토스뱅크", number: "100-00-00**-**0", isPrimary: true },
   ]);
 
   // 주 거래 카드 설정 함수 (클릭한 항목만 true로 변경)
@@ -129,7 +127,7 @@ const PaymentManagePage = () => {
 
   // 결제수단 추가 페이지로 이동하는 함수
   const handleNavigateToAdd = () => {
-    navigate("/payment-register"); // 등록 페이지 라우트 경로에 맞게 수정 가능
+    navigate("/payment-register");
   };
 
   return (
@@ -148,10 +146,8 @@ const PaymentManagePage = () => {
                 ★
               </StarButton>
 
-              {/* 카드/계좌 아이콘 */}
               <CardIcon />
 
-              {/* 정보 (이름 및 마스킹된 번호) */}
               <InfoArea>
                 <span className="title">{method.name}</span>
                 <span className="number">{method.number}</span>
@@ -160,7 +156,6 @@ const PaymentManagePage = () => {
           ))}
         </MethodListWrapper>
 
-        {/* 결제수단 추가하기 버튼 */}
         <AddButton onClick={handleNavigateToAdd}>+ 결제수단 추가하기</AddButton>
       </Container>
     </ScreenWrapper>
