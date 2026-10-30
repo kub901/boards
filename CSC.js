@@ -24,33 +24,33 @@ const Container = styled.div`
   flex-direction: column;
   gap: 35px;
 `;
-
+// 섹션 스타일
 const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 `;
-
+// 제목 스타일
 const SubTitle = styled.span`
   font-size: 20px;
   color: #666666;
   margin-bottom: 6px;
   font-weight: 400;
 `;
-
+// 중간 내용 스타일
 const MainContent = styled.h2`
   font-size: 30px;
   font-weight: bold;
   color: #000000;
   margin: 0 0 6px 0;
 `;
-
+// 시간 정보 스타일
 const TimeInfo = styled.span`
   font-size: 20px;
   color: #666666;
   font-weight: 400;
 `;
-
+// 카카오 버튼 구현
 const KakaoButton = styled.a`
   position: absolute;
   cursor: pointer;
