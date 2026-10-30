@@ -156,6 +156,7 @@ const PaymentManagePage = () => {
           ))}
         </MethodListWrapper>
 
+        {/* 결제수단 추가하기 버튼 */}
         <AddButton onClick={handleNavigateToAdd}>+ 결제수단 추가하기</AddButton>
       </Container>
     </ScreenWrapper>
