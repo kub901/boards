@@ -43,7 +43,7 @@ const Container = styled.div`
 const Section = styled.div`
   margin-bottom: 24px;
 `;
-
+// 부제목 스타일
 const SectionTitle = styled.h3`
   font-size: 16px;
   font-weight: 600;
@@ -56,7 +56,7 @@ const SectionTitle = styled.h3`
   background-color: #f9f9f9;
 `;
 
-// Link 컴포넌트에 스타일 적용
+// Link 컴포넌트에 스타일
 const StyledLink = styled(Link)`
   display: block;
   padding: 16px 20px;
